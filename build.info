@@ -1,5 +1,5 @@
 --- build ---
-build.time: 2026-06-15T16:35:21.290673+00:00
+build.time: 2026-09-23T15:37:12.038662+00:00
 build.s3m_protobuild.version: 0.1.0
 build.selector.0: common:py
 build.selector.1: slurm:py
@@ -10,36 +10,36 @@ build.selector.5: tms:py
 build.artifact.0.key: s3m-apis:py
 
 --- source: s3m-apis ---
-source.module.version: 0.3.5
+source.module.version: 0.4.0
 source.module.go_package: github.com/olcf/s3m-apis
-source.git.commit: 1cb13d618c8a52692a0fd7e082cb3bd13fbc8c79
-source.git.commit_time: 2026-06-15 12:33:50 -0400
+source.git.commit: 19e06ed7d6ecb04d60836cf82f4ab95b9b05410e
+source.git.commit_time: 2026-09-23 11:35:30 -0400
 source.git.dirty: false
 source.git.untracked: false
 
 --- tooling ---
 tooling.python.pkg.betterproto: 2.0.0b7
 tooling.python.pkg.black: 26.5.1
-tooling.python.pkg.click: 8.4.1
-tooling.python.pkg.grpcio: 1.81.1
+tooling.python.pkg.click: 8.5.0
+tooling.python.pkg.grpcio: 1.84.0
 tooling.python.pkg.grpcio-tools: 1.80.0
 tooling.python.pkg.grpclib: 0.4.9
-tooling.python.pkg.h2: 4.3.0
-tooling.python.pkg.hpack: 4.1.0
+tooling.python.pkg.h2: 4.4.1
+tooling.python.pkg.hpack: 4.2.0
 tooling.python.pkg.hyperframe: 6.1.0
 tooling.python.pkg.isort: 5.13.2
 tooling.python.pkg.Jinja2: 3.1.6
 tooling.python.pkg.MarkupSafe: 3.0.3
-tooling.python.pkg.multidict: 6.7.1
+tooling.python.pkg.multidict: 6.9.1
 tooling.python.pkg.mypy_extensions: 1.1.0
-tooling.python.pkg.packaging: 26.2
+tooling.python.pkg.packaging: 26.3
 tooling.python.pkg.pathspec: 1.1.1
-tooling.python.pkg.platformdirs: 4.10.0
+tooling.python.pkg.platformdirs: 4.11.12
 tooling.python.pkg.protobuf: 6.33.6
 tooling.python.pkg.python-dateutil: 2.9.0.post0
 tooling.python.pkg.pytokens: 0.4.1
 tooling.python.pkg.PyYAML: 6.0.3
-tooling.python.pkg.setuptools: 82.0.1
+tooling.python.pkg.setuptools: 84.0.0
 tooling.python.pkg.six: 1.17.0
-tooling.python.pkg.typing_extensions: 4.15.0
+tooling.python.pkg.typing_extensions: 4.16.0
 

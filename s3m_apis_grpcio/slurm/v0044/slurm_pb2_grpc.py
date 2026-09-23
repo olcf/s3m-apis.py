@@ -55,7 +55,7 @@ class SlurmIndirectStub(object):
                 _registered_method=True)
         self.GetJobs = channel.unary_unary(
                 '/olcf.s3m.slurm.v0044.SlurmIndirect/GetJobs',
-                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                request_serializer=proto_dot_slurm_dot_v0044_dot_slurm__pb2.JobsReq.SerializeToString,
                 response_deserializer=proto_dot_slurm_dot_v0044_dot_slurm__pb2.JobsResp.FromString,
                 _registered_method=True)
         self.PostJobSubmit = channel.unary_unary(
@@ -165,7 +165,7 @@ def add_SlurmIndirectServicer_to_server(servicer, server):
             ),
             'GetJobs': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJobs,
-                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    request_deserializer=proto_dot_slurm_dot_v0044_dot_slurm__pb2.JobsReq.FromString,
                     response_serializer=proto_dot_slurm_dot_v0044_dot_slurm__pb2.JobsResp.SerializeToString,
             ),
             'PostJobSubmit': grpc.unary_unary_rpc_method_handler(
@@ -303,7 +303,7 @@ class SlurmIndirect(object):
             request,
             target,
             '/olcf.s3m.slurm.v0044.SlurmIndirect/GetJobs',
-            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            proto_dot_slurm_dot_v0044_dot_slurm__pb2.JobsReq.SerializeToString,
             proto_dot_slurm_dot_v0044_dot_slurm__pb2.JobsResp.FromString,
             options,
             channel_credentials,
